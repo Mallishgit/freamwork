@@ -1,0 +1,17 @@
+<html>
+<head>
+	<script language="javascript">
+		function parseURL()
+		{
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			var dt=urlParams.get('name')
+			h1Id.innerHTML=dt;
+		}
+	</script>
+</head>
+<body>
+	<h1 id="h1Id"> Shiva Sharanu</h1>
+	<input type="button" value="click on me" onclick="parseURL()">
+</body>
+</html>
